@@ -1,0 +1,57 @@
+﻿<Window x:Class="EnterpriseBudget.DeptBudgets.Windows.AddExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnterpriseBudget.DeptBudgets.Windows"
+        mc:Ignorable="d"
+        Title="AddExpenseWindow" Height="500" Width="800">
+    <Grid Background="#FF353535">
+        <TextBlock Foreground="White" FontWeight="SemiBold"  FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top">Enter expense details</TextBlock>
+
+        <StackPanel HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Center">
+
+            <!-- Date -->
+            <TextBlock  Text="Date" Foreground="#FFFF9696" FontWeight="SemiBold" FontSize="15"/>
+            <DatePicker x:Name="dateInput"/>
+
+            <!-- Amount -->
+            <TextBlock Margin="0,15,0,0" Foreground="#FFFF9696" FontWeight="SemiBold" FontSize="15">Amount</TextBlock>
+            <TextBox x:Name="Amount"/>
+
+            <!-- Description -->
+            <TextBlock Text="Description" Margin="0,15,0,0" Foreground="#FFFF9696" FontWeight="SemiBold" FontSize="15"/>
+            <TextBox x:Name="Description" Padding="0,3" AcceptsReturn="True"/>
+
+
+
+            <!-- Category -->
+            <!--<WrapPanel Height="auto" Margin="0,10,0,0">-->
+                <StackPanel Margin="0,15,0,0" >
+                    <TextBlock Text="Category"  Foreground="#FFFF9696" FontWeight="SemiBold" FontSize="15"/>
+                    <ComboBox IsEditable="True" x:Name="cmbBoxCategories" SelectionChanged="cmbBoxCategories_SelectionChanged">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Description}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+                <!--<Button  Foreground="White" Margin="0,10,0,0" Padding="6,5,6,5" Background="#FF5F4444" x:Name="addCategory" Click="addCategory_Click" VerticalAlignment="Bottom">Add category</Button>-->
+
+            <!--</WrapPanel>-->
+
+            <!--Category Limit-->
+            <TextBlock x:Name="limit" Margin="0,10,0,0" Foreground="AntiqueWhite" FontSize="15"></TextBlock>
+            
+            <!--Current Category-->
+            <TextBlock x:Name="currentCat" Margin="0,10,0,0" Foreground="AntiqueWhite" FontSize="15"></TextBlock>
+
+            <!-- Add / Cancel buttons-->
+            <WrapPanel Margin="0,35,0,0" HorizontalAlignment="Center">
+                <Button Padding="16,5,16,5" FontWeight="SemiBold" Margin="0,0,25,0" Foreground="White" Background="#FF5F4444"  Click="add_Click">Add</Button>
+                <Button Padding="16,5,16,5" FontWeight="SemiBold" Foreground="White" Background="#FF5F4444" Click="cancel_Click">Cancel</Button>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

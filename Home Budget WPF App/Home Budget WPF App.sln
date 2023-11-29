@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home Budget WPF App", "Home Budget WPF App.csproj", "{CFC986AB-4193-4293-B2D2-73EABE85D5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1Net", "..\UnitTestProject1Net\UnitTestProject1Net.csproj", "{B689BDFE-BEBD-41DD-A8A6-4E9B5B02EA52}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{E8F9ECEB-5B40-48F2-B3C3-6E4E4BF12DC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFC986AB-4193-4293-B2D2-73EABE85D5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC986AB-4193-4293-B2D2-73EABE85D5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC986AB-4193-4293-B2D2-73EABE85D5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC986AB-4193-4293-B2D2-73EABE85D5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B689BDFE-BEBD-41DD-A8A6-4E9B5B02EA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B689BDFE-BEBD-41DD-A8A6-4E9B5B02EA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B689BDFE-BEBD-41DD-A8A6-4E9B5B02EA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B689BDFE-BEBD-41DD-A8A6-4E9B5B02EA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F9ECEB-5B40-48F2-B3C3-6E4E4BF12DC3}.Debug|Any CPU.ActiveCfg = Debug
+		{E8F9ECEB-5B40-48F2-B3C3-6E4E4BF12DC3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C677A66D-EBCE-4874-B744-F0DF1BE47772}
+	EndGlobalSection
+EndGlobal
